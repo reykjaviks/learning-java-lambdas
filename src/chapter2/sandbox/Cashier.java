@@ -1,9 +1,9 @@
+package chapter2.sandbox;
+
 /**
  * Play with functional interfaces.
  * @author Elizabeth Berg
  */
-package chapter2.sandbox;
-
 public class Cashier {
 
     public void cashIn(Payment payment) {
