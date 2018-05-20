@@ -4,7 +4,7 @@ import javax.swing.JButton;
 
 /** Type inference rules
  *
- * @author Elizabeth Berg, code in a and b is from the book
+ * @author Elizabeth Berg
  */
 public class Question3 {
 
