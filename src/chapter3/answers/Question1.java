@@ -4,7 +4,6 @@ import java.util.ArrayList;
 import java.util.Arrays;
 import java.util.Iterator;
 import java.util.List;
-import java.util.stream.Stream;
 
 /** Three ways to add up numbers.
  *
@@ -30,21 +29,25 @@ public class Question1 {
         return sum;
     }
     // 3. Internal iteration using Streams
-    public static int addByInternal_iteration(Stream<Integer> numbers) {
-        return 0;
+    public static int addByInternal_iteration(List<Integer> allNumbers) {
+        return allNumbers.stream()
+                         .reduce(0, (sum, number) -> sum + number);
     }
 
     public static void main(String[] args) {
-        // 1. Method
+        // 1. uses array and 2. and 3 use ArrayList
         Integer[] numbers = new Integer[] {1, 2, 3, 4, 5};
+        List<Integer> numbersList = new ArrayList<>();
+
+        // 1.
         System.out.println(addByLooping(numbers));
 
-        // 2. Method
-        List<Integer> numbersList = new ArrayList<>();
+        // 2.
         numbersList.addAll(Arrays.asList(numbers));
         System.out.println(addByExternal_Iteration(numbersList));
 
-        // 3. Method
+        // 3.
+        System.out.println(addByInternal_iteration(numbersList));
 
     }
 }
