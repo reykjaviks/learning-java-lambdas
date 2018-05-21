@@ -10,7 +10,7 @@ import java.util.List;
  * @author Elizabeth Berg
  */
 public class Question1 {
-    // 1. The traditional approach using a for loop
+    // 1. The traditional approach by using a for loop
     public static int addUpByLooping(Integer[] allNumbers) {
         int sum = 0;
         for (int number : allNumbers) {
@@ -28,6 +28,7 @@ public class Question1 {
         }
         return sum;
     }
+
     // 3. Internal iteration using Streams
     public static int addUpInternally(List<Integer> allNumbers) {
         return allNumbers.stream()
@@ -37,6 +38,7 @@ public class Question1 {
     public static void main(String[] args) {
         // 1. takes an array as a parameter and 2. and 3. take a list
         Integer[] numbersArray = new Integer[] {1, 2, 3, 4, 5};
+        
         List<Integer> numbersList = new ArrayList<>();
         numbersList.addAll(Arrays.asList(numbersArray));
 
