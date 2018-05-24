@@ -9,7 +9,7 @@ import java.util.List;
  *
  * @author Elizabeth Berg
  */
-public class Question1 {
+public class Question1a {
     // 1. The traditional approach by using a for loop
     public static int addUpByLooping(Integer[] allNumbers) {
         int sum = 0;
