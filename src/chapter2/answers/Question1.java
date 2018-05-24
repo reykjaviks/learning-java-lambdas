@@ -15,8 +15,8 @@ public class Question1 {
         System.out.println(result);
 
         // Incorrect
-        Function<Long, Long> incrementXY = (x, y) -> x + 1; // Compiler error: too many parameters
-        Function<Long, Long> equalsOne = x -> x == 1; // Compiler error: bad return type
+        // Function<Long, Long> incrementXY = (x, y) -> x + 1; // Compiler error: too many parameters
+        // Function<Long, Long> equalsOne = x -> x == 1; // Compiler error: bad return type
     }
 
 }
