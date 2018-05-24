@@ -1,13 +1,13 @@
 package chapter3.answers;
 
 import common.Artist;
-import static java.util.Arrays.asList;
+import common.InitArtists;
 import java.util.List;
 import static java.util.stream.Collectors.toList;
 
 /**
  *
- * @author Sally
+ * @author Elizabeth Berg
  */
 public class Question1b {
 
@@ -18,10 +18,8 @@ public class Question1b {
     }
 
     public static void main(String[] args) {
-        List<Artist> artists = asList(new Artist("Kylie Minogue", "Melbourne, Australia"),
-                                      new Artist("Dido", "London, The United Kingdom"),
-                                      new Artist("Sonoio", "Los Angeles, California"));
-
+        List<Artist> artists = InitArtists.initNameOrigin();
+        
         for (String name : findNames(artists)) {
             System.out.println(name);
         }
