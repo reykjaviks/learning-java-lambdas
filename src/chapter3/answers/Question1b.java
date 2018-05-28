@@ -13,8 +13,8 @@ public class Question1b {
 
     public static List<String> findNames(List<Artist> artists) {
         return artists.stream()
-                .map(artist -> artist.getName())
-                .collect(toList());
+                      .map(artist -> artist.getName())
+                      .collect(toList());
     }
 
     public static void main(String[] args) {
