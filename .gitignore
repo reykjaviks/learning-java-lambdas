@@ -7,11 +7,12 @@ nbdist/
 nbactions.xml
 nb-configuration.xml
 
-# Maven #	
+# Maven specific #	
 .settings
 .project
 .classpath
 target/
+*log4j*
 
 # Compiled class file
 *.class
