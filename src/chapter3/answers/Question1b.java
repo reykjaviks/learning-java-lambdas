@@ -1,7 +1,7 @@
 package chapter3.answers;
 
-import common.Artist;
-import common.InitArtists;
+import old_common.Artist;
+import old_common.InitArtists;
 import java.util.List;
 import static java.util.stream.Collectors.toList;
 

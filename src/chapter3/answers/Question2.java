@@ -1,6 +1,6 @@
 package chapter3.answers;
 
-import common.Artist;
+import old_common.Artist;
 import static java.util.Arrays.asList;
 import java.util.List;
 import java.util.stream.Stream;
