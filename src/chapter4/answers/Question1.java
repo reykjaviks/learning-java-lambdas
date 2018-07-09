@@ -22,18 +22,19 @@ public class Question1 implements Performance {
 
     public static void main(String[] args) {
         Question1 question1 = new Question1();
-        
         Artist sally = new Artist("Sally", "finnish");
         Artist tuomas = new Artist("Tuomas", "finnish");
-        
-        List<Artist> listOfArtists = new ArrayList<>();
-        listOfArtists.add(sally);
-        listOfArtists.add(tuomas);
+        List<Artist> band = new ArrayList<>();
+        band.add(sally);
+        band.add(tuomas);
 
-        Artist theBrownies = new Artist("The Brownies", listOfArtists, "English");
-        
-        // Erroneus, fix it
-        System.out.println(question1.getAllMusicians(theBrownies));
+        Artist theBrownies = new Artist("The Brownies", band, "English");
+
+       List<String> goo = question1.getAllMusicians(theBrownies);
+       for (String name : goo) {
+           System.out.println(name);
+       }
+       
 
     }
 
