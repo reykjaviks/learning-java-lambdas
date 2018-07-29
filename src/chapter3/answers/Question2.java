@@ -28,7 +28,7 @@ public class Question2 {
     public static void main(String[] args) {
         Artist Sonoio = new Artist("Sonoio", "Los Angeles, California");
         Artist Alessandro = new Artist("Alessandro Cortini", "Los Angeles, California");
-        Sonoio.addMembers(Alessandro);
+       // Sonoio.addMembers(Alessandro);
         List<Artist> artists = asList(Sonoio);
     }
 
