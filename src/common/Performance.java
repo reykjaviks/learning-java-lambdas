@@ -15,14 +15,14 @@ public interface Performance {
 
     public default List<String> getAllMusicians(Artist artist) {
         return artist.getMembers()
-                .map(member -> member.getName())
-                .collect(toList());
+                     .map(member -> member.getName())
+                     .collect(toList());
     }
 
     public static List<String> findNames(List<old_common.Artist> artists) {
         return artists.stream()
-                .map(artist -> artist.getName())
-                .collect(toList());
+                      .map(artist -> artist.getName())
+                      .collect(toList());
     }
 
 }
